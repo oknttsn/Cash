@@ -9,6 +9,6 @@ public class AppUser : IdentityUser<Guid>
     public string District { get; set; } // adress
     public string City { get; set; } //sehir
     public string ImageUrl { get; set; } //musteri resim
-
+    public int ConfirmCode { get; set; }
     public List<ClientAccount> ClientAccounts { get; set; }
 }

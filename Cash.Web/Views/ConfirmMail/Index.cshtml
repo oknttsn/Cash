@@ -1,0 +1,16 @@
+﻿@model ConfirmMailViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <link href="~\lib\bootstrap\dist\css\bootstrap.rtl.min.css" rel="stylesheet" />
+    <form method="post">
+        <label>Mail Address</label>
+        <input type="text" class="form-control" asp-for="Mail" value="@ViewBag.Value" />
+        <label>Mail Confirm Code</label>
+        <br />
+        <input type="text" class="form-control" asp-for="ConfirmCode" />
+        <br />
+        <button class="btn-outline-primary">Active</button>
+    </form>
+</div>
