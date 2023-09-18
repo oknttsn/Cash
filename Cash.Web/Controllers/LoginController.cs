@@ -2,6 +2,7 @@
 using Cash.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
 
 namespace Cash.Web.Controllers;
 
@@ -22,12 +23,13 @@ public class LoginController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Index(AppUser appUser,LoginViewModel loginViewModel)
+    public async Task<IActionResult> Index(LoginViewModel loginViewModel)
     {
-        var result = await _signInManager.PasswordSignInAsync(appUser, loginViewModel.Password, false, true);
+		
+		var result = await _signInManager.PasswordSignInAsync(loginViewModel.UserName,loginViewModel.Password, false, true);
         if (result.Succeeded)
         {
-            var user = await _userManager.FindByEmailAsync(loginViewModel.Email);
+            var user = await _userManager.FindByNameAsync(loginViewModel.UserName);
             if(user.EmailConfirmed == true)
                 return RedirectToAction("Index", "MyProfile");
         }

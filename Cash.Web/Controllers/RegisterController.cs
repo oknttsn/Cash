@@ -30,7 +30,7 @@ public class RegisterController : Controller
         {
             Name = appUserRegisterDto.Name,
             Surname = appUserRegisterDto.SurName,
-            UserName = random.ToString(),
+            UserName = appUserRegisterDto.UserName,
             Email = appUserRegisterDto.Email,
             City = "adasd",
             District="asd",

@@ -11,4 +11,5 @@ public class AppUser : IdentityUser<Guid>
     public string ImageUrl { get; set; } //musteri resim
     public int ConfirmCode { get; set; }
     public List<ClientAccount> ClientAccounts { get; set; }
+
 }
