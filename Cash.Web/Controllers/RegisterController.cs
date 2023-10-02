@@ -3,6 +3,7 @@ using Cash.Entity.Concrate;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using MimeKit;
 
 namespace Cash.Web.Controllers;

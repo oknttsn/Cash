@@ -1,7 +1,36 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
+    Layout = null;
 }
 
-<h2>Profil Sayfasi</h2>
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("CustomerLayoutHeaderPartial")
+<body class="nav-md footer_fixed">
+    <div class="container body">
+        <div class="main_container">
+            @await Component.InvokeAsync("CustomerLayoutSidebarPartial")
+            @await Component.InvokeAsync("CustomerLayoutNavbarPartial")
+            <!-- page content -->
+            <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h2>asd</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            @await Component.InvokeAsync("CustomerLayoutFooterPartial")
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    @await Component.InvokeAsync("CustomerLayoutScriptPartial")
+   
+</body>
+</html>
 
