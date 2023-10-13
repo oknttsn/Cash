@@ -19,6 +19,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.SqlServer.SqlManagementObjects" Version="170.18.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,9 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Validations\AppRoleValidator\" />
     <Folder Include="Validations\CustomerAccountValidator\" />
-    <Folder Include="Validations\AccountProcessValidator\" />
   </ItemGroup>
 
 </Project>

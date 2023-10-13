@@ -25,9 +25,4 @@
     <ProjectReference Include="..\Cash.Entity\Cash.Entity.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\AccountProcessRepository\" />
-    <Folder Include="Repositories\ClientAccountRepository\" />
-  </ItemGroup>
-
 </Project>

@@ -20,8 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AppRoleDto\" />
-    <Folder Include="ClientAccountDto\" />
     <Folder Include="AccountProcessDto\" />
   </ItemGroup>
 

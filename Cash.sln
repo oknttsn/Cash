@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cash.Entity", "Cash.Entity\Cash.Entity.csproj", "{F4B0DFA7-7230-47A6-9C97-1C049AD43274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cash.Entity", "Cash.Entity\Cash.Entity.csproj", "{F4B0DFA7-7230-47A6-9C97-1C049AD43274}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cash.Business", "Cash.Business\Cash.Business.csproj", "{A4B16291-64B7-4AD2-9931-2C8BEAB02E66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cash.Business", "Cash.Business\Cash.Business.csproj", "{A4B16291-64B7-4AD2-9931-2C8BEAB02E66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cash.Dto", "Cash.Dto\Cash.Dto.csproj", "{ACFDD996-EFC7-4FF1-A29F-6049D2FADA93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cash.Dto", "Cash.Dto\Cash.Dto.csproj", "{ACFDD996-EFC7-4FF1-A29F-6049D2FADA93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cash.DataAccess", "Cash.DataAccess\Cash.DataAccess.csproj", "{C1AC5B82-D664-4382-A043-DEFDEEE11D46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cash.DataAccess", "Cash.DataAccess\Cash.DataAccess.csproj", "{C1AC5B82-D664-4382-A043-DEFDEEE11D46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cash.Web", "Cash.Web\Cash.Web.csproj", "{EC95F327-24EE-4137-934B-C8105149F274}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cash.Web", "Cash.Web\Cash.Web.csproj", "{EC95F327-24EE-4137-934B-C8105149F274}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
