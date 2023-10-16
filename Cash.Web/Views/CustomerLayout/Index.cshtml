@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Customer";
+    Layout = null;
+}
+
+@* <!DOCTYPE html>
+<html lang="en"
+      class="light-style layout-menu-fixed"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="~/admin/assets/"
+      data-template="vertical-menu-template-free">
+@await Component.InvokeAsync("CustomerLayoutHeaderPartial")
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            @await Component.InvokeAsync("CustomerLayoutSidebarPartial")
+            <div class="layout-page">
+            @await Component.InvokeAsync("CustomerLayoutNavbarPartial")
+            <!-- page content -->
+                <div class="content-wrapper">
+                    @RenderBody();
+            <!-- /page content -->
+            <!-- footer content -->
+            @await Component.InvokeAsync("CustomerLayoutFooterPartial")
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    @await Component.InvokeAsync("CustomerLayoutScriptPartial")
+   
+</body>
+</html>
+ *@

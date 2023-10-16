@@ -1,9 +1,7 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Customer";
     Layout = null;
 }
-
 <!DOCTYPE html>
 <html lang="en"
       class="light-style layout-menu-fixed"
@@ -18,18 +16,19 @@
         <div class="layout-container">
             @await Component.InvokeAsync("CustomerLayoutSidebarPartial")
             <div class="layout-page">
-            @await Component.InvokeAsync("CustomerLayoutNavbarPartial")
-            <!-- page content -->
+                @await Component.InvokeAsync("CustomerLayoutNavbarPartial")
+                <!-- page content -->
                 <div class="content-wrapper">
-            <!-- /page content -->
-            <!-- footer content -->
-            @await Component.InvokeAsync("CustomerLayoutFooterPartial")
-            <!-- /footer content -->
+                    @RenderBody()
+                    <!-- /page content -->
+                    <!-- footer content -->
+                    @await Component.InvokeAsync("CustomerLayoutFooterPartial")
+                    <!-- /footer content -->
+                </div>
+            </div>
         </div>
     </div>
-
     @await Component.InvokeAsync("CustomerLayoutScriptPartial")
-   
 </body>
 </html>
 

@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+<div class="row" style="padding: 3% 3% 3% 3%; margin-right:0;">
+    <!-- FormValidation -->
+    <div class="col-12">
+        <div class="card">
+            <h5 class="card-header">Bilgiler</h5>
+            <div class="card-body">
+
+                <form id="formValidationExamples" class="row g-3">
+
+                    <div class="col-md-6">
+                        <label class="form-label" for="formValidationName">Ad</label>
+                        <input type="text" id="formValidationName" class="form-control" placeholder="John Doe" name="formValidationName" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="formValidationName">Soyad</label>
+                        <input type="text" id="formValidationName" class="form-control" placeholder="John Doe" name="formValidationName" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="formValidationEmail">Email</label>
+                        <input class="form-control" type="email" id="formValidationEmail" name="formValidationEmail" placeholder="john.doe" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-password-toggle">
+                            <label class="form-label" for="formValidationPass">Parola</label>
+                            <div class="input-group input-group-merge">
+                                <input class="form-control" type="password" id="formValidationPass" name="formValidationPass" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="multicol-password2" />
+                                <span class="input-group-text cursor-pointer" id="multicol-password2"><i class="bx bx-hide"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="phoneNumber">Phone Number</label>
+                        <div class="input-group input-group-merge">
+                            <span class="input-group-text">US (+90)</span>
+                            <input type="text"
+                                   id="phoneNumber"
+                                   name="phoneNumber"
+                                   class="form-control"
+                                   placeholder="202 555 0111" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="formValidationDob">İl</label>
+                        <input type="text" class="form-control flatpickr-validation" name="formValidationDob" id="formValidationDob" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="formValidationDob">İlçe</label>
+                        <input type="text" class="form-control flatpickr-validation" name="formValidationDob" id="formValidationDob" required />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="phoneNumber">Phone Number</label>
+                        <div class="input-group input-group-merge">
+                            <span class="input-group-text">US (+90)</span>
+                            <input type="text"
+                                   id="phoneNumber"
+                                   name="phoneNumber"
+                                   class="form-control"
+                                   placeholder="202 555 0111" />
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="formValidationFile" class="form-label">Profil Fotoğrafı</label>
+                        <input class="form-control" type="file" id="formValidationFile" name="formValidationFile">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Gender</label>
+                        <div class="form-check custom mb-2">
+                            <input type="radio" id="formValidationGender" name="formValidationGender" class="form-check-input" checked />
+                            <label class="form-check-label" for="formValidationGender">Erkek</label>
+                        </div>
+
+                        <div class="form-check custom">
+                            <input type="radio" id="formValidationGender2" name="formValidationGender" class="form-check-input" />
+                            <label class="form-check-label" for="formValidationGender2">Kadın</label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-12" style="align-items:center;">
+                        <button type="submit" name="submitButton" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /FormValidation -->
+</div>
